@@ -1,20 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
+import { NavigationContainer } from "@react-navigation/native";
+import StackNavigator from "./navigations/StackNavigator";
+import { NativeBaseProvider, extendTheme } from "native-base";
+
+import * as Font from "expo-font";
+
+import LoadingPage from "./pages/LoadingPage";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  const [ready, setReady] = useState(false);
+  const loadFont = async () => {
+    await Font.loadAsync({
+      GamjaFlower: require("./assets/fonts/GamjaFlower-Regular.ttf"),
+      "NG-Bold": require("./assets/fonts/NanumGothic-Bold.ttf"),
+      "NG-Regular": require("./assets/fonts/NanumGothic-Regular.ttf"),
+    });
+  };
+
+  useEffect(() => {
+    loadFont();
+    setTimeout(() => {
+      setReady(true);
+    }, 1000);
+  }, []);
+
+  return ready ? (
+    <NativeBaseProvider>
+      <NavigationContainer>
+        <StackNavigator />
+        <StatusBar style="light" backgroundColor="black" />
+      </NavigationContainer>
+    </NativeBaseProvider>
+  ) : (
+    <LoadingPage />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
