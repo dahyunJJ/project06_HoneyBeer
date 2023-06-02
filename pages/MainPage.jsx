@@ -24,10 +24,14 @@ export default function MainPage({ navigation }) {
     .sort((a, b) => b.rating - a.rating);
   // console.log(ratingList);
 
+  const goTheme = () => {
+    navigation.navigate("ThemePage");
+  };
+
   return (
     <ScrollView backgroundColor={"#fff"}>
       <Box safeAreaTop paddingX={4}>
-        <MainBannerComponent />
+        <MainBannerComponent navigation={navigation} />
         <VStack>
           <Text fontFamily={"GamjaFlower"} mt={6} mb={2} fontSize={20}>
             맥주 이름을 검색하세요
@@ -74,7 +78,11 @@ export default function MainPage({ navigation }) {
             );
           })}
         </ScrollView>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            goTheme();
+          }}
+        >
           <Box h={100}>
             <View style={styles.themeImgCon}>
               <Image source={beerIcon} style={styles.themeImg} />

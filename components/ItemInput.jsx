@@ -1,15 +1,23 @@
 import React from "react";
-import { FormControl, Input, Text, Box, Icon, Stack } from "native-base";
+import { Input, Text, Stack } from "native-base";
 
-export default function ItemInput({ title, type, setFunc, error, icon }) {
+export default function ItemInput({ type, setFunc, error, icon }) {
   return (
-    <Stack space={8}>
+    <Stack>
       <Input
         variant="rounded"
         placeholder={type}
-        secureTextEntry={true}
+        type={type}
         InputLeftElement={icon}
+        secureTextEntry={type === "password" ? true : false}
+        onChangeText={(text) => {
+          text = text.trim();
+          setFunc(text);
+        }}
       />
+      <Text color={"yellow.400"} fontSize={12} ml={16}>
+        {error}
+      </Text>
     </Stack>
   );
 }

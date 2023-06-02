@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, ImageBackground } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 import {
   Center,
   Text,
@@ -8,12 +8,13 @@ import {
   ScrollView,
   KeyboardAvoidingView,
   Icon,
+  HStack,
 } from "native-base";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 
 import ItemInput from "../components/ItemInput";
 
-export default function SigninPage({ navigation, route }) {
+export default function SignupPage({ navigation, route }) {
   const [nickName, setNickName] = useState("");
   const [nickNameError, setNickNameError] = useState("");
   const [email, setEmail] = useState("");
@@ -23,104 +24,144 @@ export default function SigninPage({ navigation, route }) {
   const [passwordConfirm, setPasswordConfirm] = useState("");
   const [passwordConfirmError, setPasswordConfirmError] = useState("");
 
+  const goSignIn = () => {
+    navigation.navigate("SignInPage");
+  };
+
+  const doSignUp = () => {
+    if (nickName === "") {
+      setNickNameError("닉네임을 입력해주세요");
+      return false;
+    } else {
+      setNickNameError("");
+    }
+    if (email === "") {
+      setEmailError("이메일을 입력해주세요");
+      return false;
+    } else {
+      setEmailError("");
+    }
+    if (password === "") {
+      setPasswordError("비밀번호를 입력해주세요");
+      return false;
+    } else {
+      setPasswordError("");
+    }
+    if (passwordConfirm === "") {
+      setPasswordConfirmError("비밀번호를 입력해주세요");
+      return false;
+    } else {
+      setPasswordConfirmError("");
+    }
+    if (password !== passwordConfirm) {
+      setPasswordConfirmError("비밀번호가 일치하지 않습니다");
+      return false;
+    } else {
+      setPasswordConfirmError("");
+    }
+    navigation.navigate("SignInPage"); // replace로 수정 예정
+  };
+
   return (
-    <ScrollView>
-      <Center safeAreaTop mt={20}>
-        <Text fontSize={32}>Welcome!</Text>
-        <Text fontFamily={"GamjaFlower"} fontSize={24} color={"#666"}>
-          sign in to continue
-        </Text>
-        <FormControl w={"80%"} mt={10}>
-          <ItemInput
-            type={"닉네임을 입력하세요"}
-            setFunc={setNickName}
-            icon={
-              <Icon
-                as={
-                  <MaterialIcons
-                    name="person"
-                    style={{
-                      margin: 8,
-                      padding: 8,
-                      borderRadius: 50,
-                      backgroundColor: "#FFB000",
-                      fontSize: 20,
-                      color: "#fff",
-                    }}
-                  />
-                }
-              />
-            }
-            error={nickNameError}
-          />
-          <ItemInput
-            type={"abc@beer.com"}
-            setFunc={setNickName}
-            icon={
-              <Icon
-                as={
-                  <MaterialIcons
-                    name="alternate-email"
-                    style={{
-                      margin: 8,
-                      padding: 8,
-                      borderRadius: 50,
-                      backgroundColor: "#FFB000",
-                      fontSize: 20,
-                      color: "#fff",
-                    }}
-                  />
-                }
-              />
-            }
-            error={nickNameError}
-          />
-          <ItemInput
-            type={"비밀번호를 입력하세요"}
-            setFunc={setNickName}
-            icon={
-              <Icon
-                as={
-                  <Ionicons
-                    name="lock-closed-outline"
-                    style={{
-                      margin: 8,
-                      padding: 8,
-                      borderRadius: 50,
-                      backgroundColor: "#FFB000",
-                      fontSize: 20,
-                      color: "#fff",
-                    }}
-                  />
-                }
-              />
-            }
-            error={nickNameError}
-          />
-          <ItemInput
-            type={"비밀번호 확인"}
-            setFunc={setNickName}
-            icon={
-              <Icon
-                as={
-                  <Ionicons
-                    name="lock-closed"
-                    style={{
-                      margin: 8,
-                      padding: 8,
-                      borderRadius: 50,
-                      backgroundColor: "#FFB000",
-                      fontSize: 20,
-                      color: "#fff",
-                    }}
-                  />
-                }
-              />
-            }
-            error={nickNameError}
-          />
-        </FormControl>
-      </Center>
-    </ScrollView>
+    <KeyboardAvoidingView>
+      <ScrollView>
+        <Center safeAreaTop mt={20}>
+          <Text fontSize={32}>Sign Up</Text>
+          <Text fontFamily={"GamjaFlower"} fontSize={24} color={"#666"}>
+            creaate new an account
+          </Text>
+          <FormControl w={"80%"} mt={8}>
+            <ItemInput
+              title={"닉네임"}
+              type={"nickName"}
+              setFunc={setNickName}
+              icon={
+                <Icon
+                  as={<MaterialIcons name="person" style={styles.inputIcons} />}
+                />
+              }
+              error={nickNameError}
+            />
+            <ItemInput
+              title={"이메일"}
+              type={"email"}
+              setFunc={setEmail}
+              icon={
+                <Icon
+                  as={
+                    <MaterialIcons
+                      name="alternate-email"
+                      style={styles.inputIcons}
+                    />
+                  }
+                />
+              }
+              error={emailError}
+            />
+            <ItemInput
+              title={"비밀번호"}
+              type={"password"}
+              setFunc={setPassword}
+              icon={
+                <Icon
+                  as={
+                    <Ionicons
+                      name="lock-closed-outline"
+                      style={styles.inputIcons}
+                    />
+                  }
+                />
+              }
+              error={passwordError}
+            />
+            <ItemInput
+              title={"비밀번호 확인"}
+              type={"password"}
+              setFunc={setPasswordConfirm}
+              icon={
+                <Icon
+                  as={<Ionicons name="lock-closed" style={styles.inputIcons} />}
+                />
+              }
+              error={passwordConfirmError}
+            />
+
+            <Button backgroundColor="black" borderRadius={30} my={8}>
+              <Text
+                color="#fff"
+                fontFamily={"GamjaFlower"}
+                fontSize={16}
+                onPress={() => doSignUp()}
+              >
+                회원가입
+              </Text>
+            </Button>
+            <HStack margin={"auto"}>
+              <Text>Do you have an account ?</Text>
+              <TouchableOpacity
+                onPress={() => {
+                  goSignIn();
+                }}
+              >
+                <Text pl={2} color="gray.600">
+                  Sign In
+                </Text>
+              </TouchableOpacity>
+            </HStack>
+          </FormControl>
+        </Center>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
+
+const styles = StyleSheet.create({
+  inputIcons: {
+    margin: 8,
+    padding: 8,
+    borderRadius: 50,
+    backgroundColor: "#FFB000",
+    fontSize: 20,
+    color: "#fff",
+  },
+});

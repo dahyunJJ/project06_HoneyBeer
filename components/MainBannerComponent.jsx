@@ -1,8 +1,13 @@
 import React from "react";
 import { StyleSheet, ImageBackground, TouchableOpacity } from "react-native";
-import { Pressable, Text, Box, Center } from "native-base";
+import { Text, Box, Center } from "native-base";
 
-export default function MainBannerComponent() {
+export default function MainBannerComponent({ navigation }) {
+  // console.log(navigation);
+
+  const goAdd = () => {
+    navigation.navigate("AddPage");
+  };
   return (
     <Center mt={4} w={"100%"} h={200} borderRadius={20} overflow={"hidden"}>
       <ImageBackground
@@ -16,7 +21,13 @@ export default function MainBannerComponent() {
           <Text style={styles.boxTxt}>추천해 주세요!</Text>
         </Box>
         <TouchableOpacity style={styles.recommend}>
-          <Text textAlign={"center"} fontSize={12}>
+          <Text
+            textAlign={"center"}
+            fontSize={12}
+            onPress={() => {
+              goAdd();
+            }}
+          >
             최애 맥주 추천하기
           </Text>
         </TouchableOpacity>
