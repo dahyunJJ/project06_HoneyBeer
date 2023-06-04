@@ -1,15 +1,18 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { StyleSheet, ImageBackground, ScrollView } from "react-native";
-import { Center, Text, View } from "native-base";
+import { StyleSheet, Image, ImageBackground, ScrollView } from "react-native";
+import { Center, Text, View, theme } from "native-base";
 
 import themeImg1 from "../assets/image/themeImg1.png";
 import themeImg2 from "../assets/image/themeImg2.png";
 import themeImg3 from "../assets/image/themeImg3.png";
 import themeImg4 from "../assets/image/themeImg4.png";
 import themeImg5 from "../assets/image/themeImg5.png";
+// import data from "../data/mackjooData.json";
 
 export default function ThemePage({ navigation, route }) {
+  // const [cate, setCate] = useState([]);
+
   useEffect(() => {
     navigation.setOptions({
       title: "테마별 맥주 추천",
@@ -20,12 +23,18 @@ export default function ThemePage({ navigation, route }) {
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
+        // fontWeight: "bold",
         fontSize: 20,
         fontFamily: "Gamja-Flower",
       },
       headerShown: true,
     });
+    // setCate(data);
   }, []);
+
+  // 테마 카테고리 분류
+  // const themes = cate.map((item) => item.theme);
+  // console.log("테마 카테고리", themes);
 
   const goBeerList = (theme) => {
     navigation.navigate("ThemeBeerList", { theme });

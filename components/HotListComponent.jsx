@@ -5,8 +5,13 @@ import { Box, Text, HStack, VStack } from "native-base";
 import ImageBlurLoading from "react-native-image-blur-loading";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 
-export default function HotListComponent({ item, navigation }) {
-  // console.log(item);
+export default function HotListComponent({ navigation, item }) {
+  // console.log("핫한맥주", item);
+
+  const goDetail = () => {
+    navigation.navigate("DetailPage", { item: item });
+  };
+
   return (
     <View
       alignItems="center"
@@ -18,32 +23,39 @@ export default function HotListComponent({ item, navigation }) {
       borderColor={"gray"}
       backgroundColor={"#fff"}
     >
-      <Box w={20} h={40} p={2}>
-        <ImageBlurLoading
-          withIndicator
-          thumbnailSource={{ uri: item.img }}
-          source={{ uri: item.img }}
-          style={{
-            width: "100%",
-            height: "100%",
-            resizeMode: "contain",
-          }}
-        />
-      </Box>
-      <VStack px={2}>
-        <Text w={"120px"} numberOfLines={1} fontSize={12} textAlign="center">
-          {item.korProduct}
-        </Text>
-        <HStack alignItems={"center"} justifyContent={"space-between"} mt={2}>
-          <HStack>
-            <AntDesign name="star" size={14} color="#FFB000" />
-            <Text paddingLeft={1} fontSize={12}>
-              {item.rating}
-            </Text>
+      <TouchableOpacity onPress={() => goDetail()}>
+        <Box w={"140px"} h={"140px"} p={2}>
+          <ImageBlurLoading
+            withIndicator
+            thumbnailSource={{ uri: item.img }}
+            source={{ uri: item.img }}
+            style={{
+              width: "100%",
+              height: "100%",
+              resizeMode: "contain",
+            }}
+          />
+        </Box>
+        <VStack mt={4} mb={2} alignItems={"center"}>
+          <Text w={"120px"} numberOfLines={1} fontSize={12} textAlign="center">
+            {item.korProduct}
+          </Text>
+          <HStack
+            mt={2}
+            w={"120px"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+          >
+            <HStack>
+              <AntDesign name="star" size={14} color="#FFB000" />
+              <Text paddingLeft={1} fontSize={12}>
+                {item.rating}
+              </Text>
+            </HStack>
+            <Entypo name="heart-outlined" size={16} color="gray" />
           </HStack>
-          <Entypo name="heart-outlined" size={16} color="gray" />
-        </HStack>
-      </VStack>
+        </VStack>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -61,7 +73,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 26,
     paddingVertical: 4,
-    fontFamily: "GamjaFlower-Regular",
+    fontFamily: "Gamja-Flower",
   },
   recommend: {
     backgroundColor: "#ffffff95",

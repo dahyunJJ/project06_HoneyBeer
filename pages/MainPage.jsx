@@ -8,14 +8,13 @@ import MainBannerComponent from "../components/MainBannerComponent";
 import HotListComponent from "../components/HotListComponent";
 
 import data from "../data/mackjooData.json";
-import beerIcon from "../assets/image/1684389058446.png";
+import beerIcon from "../assets/image/beerIcon.png";
 
-export default function MainPage({ navigation }) {
-  const [list, setList] = useState(data);
-  // console.log(list);
+export default function MainPage({ navigation, route }) {
+  const [list, setList] = useState([]);
 
   useEffect(() => {
-    setList(list);
+    setList(data);
   }, []);
 
   // 평점 3.5점 이상인 상품 오름차순으로 정리
@@ -33,7 +32,7 @@ export default function MainPage({ navigation }) {
       <Box safeAreaTop paddingX={4}>
         <MainBannerComponent navigation={navigation} />
         <VStack>
-          <Text fontFamily={"GamjaFlower"} mt={6} mb={2} fontSize={20}>
+          <Text fontFamily={"Gamja-Flower"} mt={6} mb={2} fontSize={20}>
             맥주 이름을 검색하세요
           </Text>
           <HStack
@@ -64,7 +63,7 @@ export default function MainPage({ navigation }) {
             </TouchableOpacity>
           </HStack>
         </VStack>
-        <Text fontFamily={"GamjaFlower"} mt={6} mb={2} fontSize={20}>
+        <Text fontFamily={"Gamja-Flower"} mt={6} mb={2} fontSize={20}>
           요즘 핫한 맥주
         </Text>
         <ScrollView
@@ -74,7 +73,12 @@ export default function MainPage({ navigation }) {
         >
           {ratingList.map((item, i) => {
             return (
-              <HotListComponent item={item} key={i} navigation={navigation} />
+              <HotListComponent
+                item={item}
+                key={i}
+                navigation={navigation}
+                route={route}
+              />
             );
           })}
         </ScrollView>
@@ -94,7 +98,7 @@ export default function MainPage({ navigation }) {
                 justifyContent={"flex-end"}
                 py={2}
               >
-                <Text fontFamily={"GamjaFlower"} fontSize={20}>
+                <Text fontFamily={"Gamja-Flower"} fontSize={20}>
                   테마별 맥주 추천
                 </Text>
                 <FontAwesome

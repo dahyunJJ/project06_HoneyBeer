@@ -12,9 +12,9 @@ export default function App() {
   const [ready, setReady] = useState(false);
   const loadFont = async () => {
     await Font.loadAsync({
-      GamjaFlower: require("./assets/fonts/GamjaFlower-Regular.ttf"),
       "NG-Bold": require("./assets/fonts/NanumGothic-Bold.ttf"),
       "NG-Regular": require("./assets/fonts/NanumGothic-Regular.ttf"),
+      "Gamja-Flower": require("./assets/fonts/GamjaFlower-Regular.ttf"),
     });
   };
 

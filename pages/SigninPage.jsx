@@ -5,14 +5,14 @@ import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 
 import ItemInput from "../components/ItemInput";
 
-export default function SignInPage({ navigation }) {
+export default function SigninPage({ navigation }) {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
   const goSignUp = () => {
-    navigation.navigate("SignUpPage");
+    navigation.navigate("SignupPage");
   };
 
   const doSignIn = () => {
@@ -34,7 +34,7 @@ export default function SignInPage({ navigation }) {
   return (
     <Center safeAreaTop mt={20}>
       <Text fontSize={32}>Welcome!</Text>
-      <Text fontFamily={"GamjaFlower"} fontSize={24} color={"#666"}>
+      <Text fontFamily={"Gamja-Flower"} fontSize={24} color={"#666"}>
         sign in to continue
       </Text>
       <FormControl w={"80%"} mt={8}>
@@ -86,7 +86,7 @@ export default function SignInPage({ navigation }) {
           <Text
             color="#fff"
             fontSize={16}
-            fontFamily={"GamjaFlower"}
+            fontFamily={"Gamja-Flower"}
             onPress={() => {
               doSignIn();
             }}

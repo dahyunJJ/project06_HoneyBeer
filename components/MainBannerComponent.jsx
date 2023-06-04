@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 26,
     paddingVertical: 4,
-    fontFamily: "GamjaFlower",
+    fontFamily: "Gamja-Flower",
   },
   recommend: {
     backgroundColor: "#ffffff95",

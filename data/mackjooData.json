@@ -13,7 +13,7 @@
     "rating": "2.50",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_271470",
     "korProduct": "클라우드 오리지널 그래비티",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "1",
@@ -29,7 +29,7 @@
     "rating": "2.39",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_251",
     "korProduct": "아사히 슈퍼드라이",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "2",
@@ -45,7 +45,7 @@
     "rating": "2.18",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_730",
     "korProduct": "칭다오",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "3",
@@ -61,7 +61,7 @@
     "rating": "2.39",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_37",
     "korProduct": "하이네켄",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "4",
@@ -77,7 +77,7 @@
     "rating": "2.38",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_268",
     "korProduct": "Kirin Ichiban",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "5",
@@ -93,7 +93,7 @@
     "rating": "2.42",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_729",
     "korProduct": "삿포로 프리미엄 맥주 / 생맥주",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "6",
@@ -109,7 +109,7 @@
     "rating": "2.74",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_1478",
     "korProduct": "스텔라 아르투아",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "7",
@@ -125,7 +125,7 @@
     "rating": "2.04",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_2811",
     "korProduct": "산미구엘",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "8",
@@ -141,7 +141,7 @@
     "rating": "1.91",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_12775",
     "korProduct": "카스 프레시",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "9",
@@ -157,7 +157,7 @@
     "rating": "2.14",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_7580",
     "korProduct": "빅토리아 비터",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "10",
@@ -173,7 +173,7 @@
     "rating": "2.13",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_7656",
     "korProduct": "빈탕 필스너",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "11",
@@ -189,7 +189,7 @@
     "rating": "2.80",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_15747",
     "korProduct": "산토리 더 프리미엄 몰츠",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "12",
@@ -205,7 +205,7 @@
     "rating": "2.26",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_3126",
     "korProduct": "타이거 맥주",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "13",
@@ -221,7 +221,7 @@
     "rating": "2.60",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_221",
     "korProduct": "Sapporo Yebisu",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "14",
@@ -237,7 +237,7 @@
     "rating": "2.43",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_3029",
     "korProduct": "페로니 나스트로 아주로",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "15",
@@ -253,7 +253,7 @@
     "rating": "3.67",
     "img": "https://balihaibeer.com/wp-content/uploads/2016/07/bhp-single-1.png",
     "korProduct": "발리 하이 프리미엄 라거",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "16",
@@ -269,7 +269,7 @@
     "rating": "2.39",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_3101",
     "korProduct": "홀스텐 프리미엄 비어",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "17",
@@ -285,7 +285,7 @@
     "rating": "2.27",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_5571",
     "korProduct": "바이에른 필스너 / 프리미엄 맥주",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "18",
@@ -301,7 +301,7 @@
     "rating": "2.27",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_4701",
     "korProduct": "라핀 쿨타 IV A",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "19",
@@ -317,7 +317,7 @@
     "rating": "2.70",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_715",
     "korProduct": "그롤쉬 프리미엄 라거",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "20",
@@ -333,7 +333,7 @@
     "rating": "2.06",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_1486",
     "korProduct": "캐슬마인 XXXX 골드 라거",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "21",
@@ -349,7 +349,7 @@
     "rating": "2.01",
     "img": "https://m.media-amazon.com/images/I/51ev2jfXQeL._AC_SX342_.jpg",
     "korProduct": "르웬브루 오리지널 4.2%",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "22",
@@ -365,7 +365,7 @@
     "rating": "2.07",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_17334",
     "korProduct": "하얼빈 맥주",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "23",
@@ -381,7 +381,7 @@
     "rating": "2.46",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_703",
     "korProduct": "벡스",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "24",
@@ -397,7 +397,7 @@
     "rating": "2.26",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_550283",
     "korProduct": "클라우드피츠 슈퍼클리어",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "25",
@@ -413,7 +413,7 @@
     "rating": "2.28",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_303473",
     "korProduct": "OB 프리미어 필스너",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "26",
@@ -429,7 +429,7 @@
     "rating": "1.99",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_136165",
     "korProduct": "하이트디 드라이 피니시",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "27",
@@ -445,7 +445,7 @@
     "rating": "1.94",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_13833",
     "korProduct": "하이트 프라임 맥스",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "28",
@@ -461,7 +461,7 @@
     "rating": "2.40",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_500620",
     "korProduct": "하이트 엑스트라 콜드",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "29",
@@ -477,7 +477,7 @@
     "rating": "1.21",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_405",
     "korProduct": "밀러 진품 Draft MGD",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "30",
@@ -493,7 +493,7 @@
     "rating": "1.77",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_473",
     "korProduct": "버드와이저",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "31",
@@ -509,7 +509,7 @@
     "rating": "2.32",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_553454",
     "korProduct": "필라이트",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "32",
@@ -525,7 +525,7 @@
     "rating": "2.12",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_146725",
     "korProduct": "스테판스 브루 프리미엄 라거",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "33",
@@ -541,7 +541,7 @@
     "rating": "3.56",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_1267",
     "korProduct": "기네스 드래프트",
-    "theme": "에일맥주"
+    "theme": "쌉쌀한 에일 맥주"
   },
   {
     "id": "34",
@@ -557,7 +557,7 @@
     "rating": "3.04",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_35424",
     "korProduct": "크로넨버그 1664 블랑",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "35",
@@ -573,7 +573,7 @@
     "rating": "3.06",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_552713",
     "korProduct": "제주위트에일",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "36",
@@ -589,7 +589,7 @@
     "rating": "0",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_580686",
     "korProduct": "플래티넘 화이트 에일",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "37",
@@ -605,7 +605,7 @@
     "rating": "3.38",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_717",
     "korProduct": "필스너 우르켈",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "38",
@@ -621,7 +621,7 @@
     "rating": "2.61",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_721",
     "korProduct": "감브리누스 오리지널 10 드와르카",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "39",
@@ -637,7 +637,7 @@
     "rating": "2.40",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_801082",
     "korProduct": "스타우트",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "40",
@@ -653,7 +653,7 @@
     "rating": "3.17",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_71469",
     "korProduct": "크롬바허 바이젠",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "41",
@@ -669,7 +669,7 @@
     "rating": "2.82",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_667837",
     "korProduct": "리퍼 B. 블론즈 바이스비어",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "42",
@@ -685,7 +685,7 @@
     "rating": "2.83",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_621308",
     "korProduct": "칭다오 밀맥주",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "43",
@@ -701,7 +701,7 @@
     "rating": "3.28",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_2468",
     "korProduct": "에딩거 바이스비어",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "44",
@@ -717,7 +717,7 @@
     "rating": "3.70",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_647",
     "korProduct": "파울라너 헤페 바이스비어",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "45",
@@ -733,7 +733,7 @@
     "rating": "3.27",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_72025",
     "korProduct": "에델바이스 바이스비어 스노우프레시",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "46",
@@ -749,11 +749,11 @@
     "rating": "1.82",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_441671",
     "korProduct": "Stephans Bru Hefe-Weizen Naturtrb",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "47",
-    "product": "Franziskaner Hefe-Weissbier / Weissbier Naturtrub",
+    "product": "Franziskaner Hefe-Weissbier",
     "style": "Weissbier - Hefeweizen",
     "category": "바이스비어",
     "Aroma": "['과일향', '스파이시한 향', '은은한 맥아향', '바나나 향']",
@@ -764,8 +764,8 @@
     "Body": "['걸쭉', '드라이']",
     "rating": "3.73",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_1088",
-    "korProduct": "Franziskaner Hefe-Weissbier / 바이스비어 Naturtrub",
-    "theme": "과일거품맥주"
+    "korProduct": "프란치스카너 헤페-바이스비어",
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "48",
@@ -781,7 +781,7 @@
     "rating": "3.05",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_615885",
     "korProduct": "Volfas Engelman Grnberger 헤페바이젠",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "49",
@@ -797,7 +797,7 @@
     "rating": "3.01",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_506847",
     "korProduct": "호가든 체리",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "50",
@@ -813,7 +813,7 @@
     "rating": "2.49",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_268685",
     "korProduct": "타이거 래들러 레몬",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "51",
@@ -829,7 +829,7 @@
     "rating": "2.40",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_221535",
     "korProduct": "에거 자몽 래들러",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "52",
@@ -845,7 +845,7 @@
     "rating": "3.03",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_71458",
     "korProduct": "쇼퍼호퍼 자몽",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "53",
@@ -861,7 +861,7 @@
     "rating": "2.71",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_632627",
     "korProduct": "리퍼 B. 엑조티쉬 IPA",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "54",
@@ -877,7 +877,7 @@
     "rating": "2.35",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_709",
     "korProduct": "칼스버그 필스너",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "55",
@@ -893,7 +893,7 @@
     "rating": "2.08",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_48093",
     "korProduct": "스테판스 브루 프리미엄 필스너",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "56",
@@ -909,7 +909,7 @@
     "rating": "2.46",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_75661",
     "korProduct": "아이히바움 아포스텔 브루",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "57",
@@ -925,7 +925,7 @@
     "rating": "2.72",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_6668",
     "korProduct": "베를리너 킨들 주빌라움 필스너 프리미엄",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "58",
@@ -941,7 +941,7 @@
     "rating": "2.77",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_1417",
     "korProduct": "워슈타이너 프리미엄 베룸",
-    "theme": "대중맥주"
+    "theme": "대중적인 맥주"
   },
   {
     "id": "59",
@@ -957,7 +957,7 @@
     "rating": "3.62",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_399",
     "korProduct": "호가든",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "60",
@@ -973,7 +973,7 @@
     "rating": "2.11",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_4007",
     "korProduct": "데스페라도스",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "61",
@@ -989,7 +989,7 @@
     "rating": "2.67",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_34662",
     "korProduct": "하이네켄 다크 라거",
-    "theme": "산뜻맥주"
+    "theme": "은은한 꽃향과 산뜻한 맥주"
   },
   {
     "id": "62",
@@ -1005,7 +1005,7 @@
     "rating": "2.77",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_169964",
     "korProduct": "아사히 슈퍼 드라이 블랙",
-    "theme": "산뜻맥주"
+    "theme": "은은한 꽃향과 산뜻한 맥주"
   },
   {
     "id": "63",
@@ -1021,7 +1021,7 @@
     "rating": "3.09",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_390",
     "korProduct": "코젤 에른 다크) 10",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "64",
@@ -1037,7 +1037,7 @@
     "rating": "2.01",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_120,c_limit/beer_55.jpg",
     "korProduct": "기네스 오리지널 4.2% 아일랜드/영국",
-    "theme": "곡물풍미맥주"
+    "theme": "구수한 곡물의 풍미"
   },
   {
     "id": "65",
@@ -1053,7 +1053,7 @@
     "rating": "3.04",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_634182",
     "korProduct": "ARK 서울라이트 에일",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "66",
@@ -1069,7 +1069,7 @@
     "rating": "3.30",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_553245",
     "korProduct": "플래티넘 페일 에일",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "67",
@@ -1085,7 +1085,7 @@
     "rating": "2.92",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_291276",
     "korProduct": "에거 즈비클",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "68",
@@ -1101,7 +1101,7 @@
     "rating": "2.58",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_58275",
     "korProduct": "에거 므첸비어",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "69",
@@ -1117,7 +1117,7 @@
     "rating": "2.32",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_5588",
     "korProduct": "바이에른 8.6 오리지널",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "70",
@@ -1132,8 +1132,8 @@
     "Body": "['미디엄']",
     "rating": "3.55",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_2516",
-    "korProduct": "Leffe Brune / Bruin / 브라운",
-    "theme": "과일거품맥주"
+    "korProduct": "레페 브라운",
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "71",
@@ -1149,7 +1149,7 @@
     "rating": "2.61",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_73158",
     "korProduct": "호가든 로즈",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "72",
@@ -1165,7 +1165,7 @@
     "rating": "0",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_394065",
     "korProduct": "버지 미스터 샌디 레몬",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "73",
@@ -1181,7 +1181,7 @@
     "rating": "2.60",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_295328",
     "korProduct": "Mallaskosken Kuohu 앰버 라거 스페셜 에디션",
-    "theme": "산뜻맥주"
+    "theme": "은은한 꽃향과 산뜻한 맥주"
   },
   {
     "id": "74",
@@ -1197,7 +1197,7 @@
     "rating": "2.39",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_21936",
     "korProduct": "레드락",
-    "theme": "과일거품맥주"
+    "theme": "과일향과 풍성한 거품"
   },
   {
     "id": "75",
@@ -1213,7 +1213,7 @@
     "rating": "3.27",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_2469",
     "korProduct": "에딩거 바이스비어 둔켈",
-    "theme": "에일맥주"
+    "theme": "쌉쌀한 에일 맥주"
   },
   {
     "id": "76",
@@ -1229,6 +1229,6 @@
     "rating": "2.87",
     "img": "https://res.cloudinary.com/ratebeer/image/upload/w_128,h_128,c_limit,d_Default_Beer_qqrv7k.png,f_auto/beer_252000",
     "korProduct": "퀸즈 에일 블론드 타입",
-    "theme": "에일맥주"
+    "theme": "쌉쌀한 에일 맥주"
   }
 ]

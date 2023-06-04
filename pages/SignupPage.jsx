@@ -25,7 +25,7 @@ export default function SignupPage({ navigation, route }) {
   const [passwordConfirmError, setPasswordConfirmError] = useState("");
 
   const goSignIn = () => {
-    navigation.navigate("SignInPage");
+    navigation.navigate("SigninPage");
   };
 
   const doSignUp = () => {
@@ -59,7 +59,7 @@ export default function SignupPage({ navigation, route }) {
     } else {
       setPasswordConfirmError("");
     }
-    navigation.navigate("SignInPage"); // replace로 수정 예정
+    navigation.navigate("SigninPage"); // replace로 수정 예정
   };
 
   return (
@@ -67,7 +67,7 @@ export default function SignupPage({ navigation, route }) {
       <ScrollView>
         <Center safeAreaTop mt={20}>
           <Text fontSize={32}>Sign Up</Text>
-          <Text fontFamily={"GamjaFlower"} fontSize={24} color={"#666"}>
+          <Text fontFamily={"Gamja-Flower"} fontSize={24} color={"#666"}>
             creaate new an account
           </Text>
           <FormControl w={"80%"} mt={8}>
@@ -129,7 +129,7 @@ export default function SignupPage({ navigation, route }) {
             <Button backgroundColor="black" borderRadius={30} my={8}>
               <Text
                 color="#fff"
-                fontFamily={"GamjaFlower"}
+                fontFamily={"Gamja-Flower"}
                 fontSize={16}
                 onPress={() => doSignUp()}
               >

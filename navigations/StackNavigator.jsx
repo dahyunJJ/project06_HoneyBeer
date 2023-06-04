@@ -1,11 +1,12 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import SignUpPage from "../pages/SignUpPage";
-import SignInPage from "../pages/SignInPage";
+import TabNavigator from "./TabNavigator";
+import SignupPage from "../pages/SignupPage";
+import SigninPage from "../pages/SigninPage";
 import DetailPage from "../pages/DetailPage";
 import ThemePage from "../pages/ThemePage";
-import TabNavigator from "./TabNavigator";
+import ThemeBeerList from "../pages/ThemeBeerList";
 
 const Stack = createStackNavigator();
 
@@ -22,10 +23,11 @@ const StackNavigator = () => {
       }}
     >
       <Stack.Screen name="TabNavigator" component={TabNavigator} />
-      <Stack.Screen name="SignUpPage" component={SignUpPage} />
-      <Stack.Screen name="SignInPage" component={SignInPage} />
+      <Stack.Screen name="SignupPage" component={SignupPage} />
+      <Stack.Screen name="SigninPage" component={SigninPage} />
       <Stack.Screen name="DetailPage" component={DetailPage} />
       <Stack.Screen name="ThemePage" component={ThemePage} />
+      <Stack.Screen name="ThemeBeerList" component={ThemeBeerList} />
     </Stack.Navigator>
   );
 };

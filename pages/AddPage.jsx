@@ -20,7 +20,7 @@ export default function AddPage({ navigation }) {
 
   useEffect(() => {
     navigation.setOptions({
-      title: "맛있는 맥주를 추천해 주세요:D",
+      title: "최애 맥주를 소개해 주세요:D",
       headerStyle: {
         backgroundColor: "#131518",
         height: 80,
@@ -30,7 +30,7 @@ export default function AddPage({ navigation }) {
       headerTitleStyle: {
         // fontWeight: "bold",
         fontSize: 20,
-        fontFamily: "GamjaFlower",
+        fontFamily: "Gamja-Flower",
       },
       headerShown: true,
     });
@@ -47,7 +47,7 @@ export default function AddPage({ navigation }) {
           </Pressable>
           <FormControl w="100%" isRequired>
             <FormControl.Label>
-              <Text fontFamily={"GamjaFlower"} fontSize={16}>
+              <Text fontFamily={"Gamja-Flower"} fontSize={16}>
                 맥주 이름
               </Text>
             </FormControl.Label>
@@ -56,32 +56,9 @@ export default function AddPage({ navigation }) {
               variant={"underlined"}
               mb={2}
             />
+
             <FormControl.Label>
-              <Text fontFamily={"GamjaFlower"} fontSize={16}>
-                맥주 타입
-              </Text>
-            </FormControl.Label>
-            <Select
-              selectedValue={type}
-              // minWidth="200"
-              w={"100%"}
-              accessibilityLabel="Choose type"
-              placeholder="맥주 타입을 골라주세요"
-              _selectedItem={{
-                bg: "#FFB000",
-                endIcon: <CheckIcon size="5" />,
-              }}
-              mt={1}
-              onValueChange={(itemValue) => setType(itemValue)}
-            >
-              <Select.Item label="라거" value="lager" />
-              <Select.Item label="에일" value="ale" />
-              <Select.Item label="IPA 맥주" value="IPA" />
-              <Select.Item label="흑맥주" value="darkbeer" />
-              <Select.Item label="크래프트" value="craft" />
-            </Select>
-            <FormControl.Label>
-              <Text fontFamily={"GamjaFlower"} fontSize={16} mt={2}>
+              <Text fontFamily={"Gamja-Flower"} fontSize={16} mt={2}>
                 Aroma (향)
               </Text>
             </FormControl.Label>
@@ -91,7 +68,7 @@ export default function AddPage({ navigation }) {
               mb={2}
             />
             <FormControl.Label>
-              <Text fontFamily={"GamjaFlower"} fontSize={16}>
+              <Text fontFamily={"Gamja-Flower"} fontSize={16}>
                 Flavor (맛)
               </Text>
             </FormControl.Label>
@@ -101,7 +78,7 @@ export default function AddPage({ navigation }) {
               mb={2}
             />
             <FormControl.Label>
-              <Text fontFamily={"GamjaFlower"} fontSize={16}>
+              <Text fontFamily={"Gamja-Flower"} fontSize={16}>
                 Balance (밸런스)
               </Text>
             </FormControl.Label>
@@ -110,18 +87,40 @@ export default function AddPage({ navigation }) {
               variant={"underlined"}
               mb={2}
             />
-            <Button
-              // onPress={upload}
-              w={"100%"}
-              backgroundColor="#FFB000"
-              borderRadius={30}
-              my={8}
-            >
-              <Text color="#fff" fontFamily={"GamjaFlower"} fontSize={16}>
-                등록
-              </Text>
-            </Button>
           </FormControl>
+          <Text fontFamily={"Gamja-Flower"} fontSize={16} w={"100%"} my={2}>
+            맥주 타입
+          </Text>
+          <Select
+            selectedValue={type}
+            // minWidth="200"
+            w={"100%"}
+            accessibilityLabel="Choose type"
+            placeholder="맥주 타입을 골라주세요"
+            _selectedItem={{
+              bg: "#FFB000",
+              endIcon: <CheckIcon size="5" />,
+            }}
+            mt={1}
+            onValueChange={(itemValue) => setType(itemValue)}
+          >
+            <Select.Item label="라거" value="lager" />
+            <Select.Item label="에일" value="ale" />
+            <Select.Item label="IPA 맥주" value="IPA" />
+            <Select.Item label="흑맥주" value="darkbeer" />
+            <Select.Item label="크래프트" value="craft" />
+          </Select>
+          <Button
+            // onPress={upload}
+            w={"100%"}
+            backgroundColor="#FFB000"
+            borderRadius={30}
+            my={8}
+          >
+            <Text color="#fff" fontFamily={"Gamja-Flower"} fontSize={16}>
+              등록
+            </Text>
+          </Button>
         </Center>
       </ScrollView>
     </KeyboardAvoidingView>
