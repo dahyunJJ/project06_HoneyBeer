@@ -38,7 +38,9 @@ export default function ThemeBeerList({ navigation, route }) {
     <ScrollView backgroundColor={"#fff"}>
       <Box safeAreaTop>
         {filteredData.map((item, i) => {
-          return <ThemeListComponent data={item} key={i} />;
+          return (
+            <ThemeListComponent item={item} key={i} navigation={navigation} />
+          );
         })}
       </Box>
     </ScrollView>

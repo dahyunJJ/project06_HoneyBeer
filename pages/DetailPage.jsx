@@ -13,6 +13,9 @@ import {
 import ImageBlurLoading from "react-native-image-blur-loading";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 
+import FoodListComponent from "../components/FoodListComponent";
+import beers from "../assets/image/beers.png";
+
 export default function DetailPage({ navigation, route }) {
   const content = route.params.item;
   // console.log(content);
@@ -29,6 +32,8 @@ export default function DetailPage({ navigation, route }) {
   const balance = beerArray("Balance");
   const body = beerArray("Body");
   const flavor = beerArray("Flavor");
+  const food = beerArray("paringFood");
+  // console.log(Food);
 
   useEffect(() => {
     navigation.setOptions({
@@ -49,7 +54,7 @@ export default function DetailPage({ navigation, route }) {
   });
   return (
     <ScrollView backgroundColor={"#fff"}>
-      <HStack safeAreaTop mt={8}>
+      <HStack safeAreaTop mt={8} alignItems={"center"}>
         <Box w={"160px"} h={"160px"}>
           <ImageBlurLoading
             withIndicator
@@ -62,7 +67,7 @@ export default function DetailPage({ navigation, route }) {
             }}
           />
         </Box>
-        <Flex ml={-6}>
+        <Flex ml={-4}>
           <Text fontSize={20} w={"200px"}>
             {content.korProduct}
           </Text>
@@ -81,7 +86,7 @@ export default function DetailPage({ navigation, route }) {
         </Flex>
       </HStack>
       <Box
-        w={"340px"}
+        w={"360px"}
         // h={"330px"}
         borderWidth={1}
         borderRadius={16}
@@ -113,37 +118,71 @@ export default function DetailPage({ navigation, route }) {
           <Text style={styles.infoTxt}>맛</Text>
           <HStack flexWrap={"wrap"} justifyContent={"center"}>
             {flavor.map((item, i) => (
-              // React.Fragment: 리액트에서 여러 개의 컴포넌트를 하나의 노드로 그룹화하는 데 사용되는 빈 컨테이너 역할
               <React.Fragment key={i}>
                 <Text>{item}</Text>
                 {i !== flavor.length - 1 && <Text>,</Text>}
-                {/* 배열의 마지막 단어에는 , 를 붙이지 않는다 */}
               </React.Fragment>
             ))}
           </HStack>
           <Text style={styles.infoTxt}>밸런스</Text>
           <HStack flexWrap={"wrap"} justifyContent={"center"}>
             {balance.map((item, i) => (
-              // React.Fragment: 리액트에서 여러 개의 컴포넌트를 하나의 노드로 그룹화하는 데 사용되는 빈 컨테이너 역할
               <React.Fragment key={i}>
                 <Text>{item}</Text>
                 {i !== balance.length - 1 && <Text>,</Text>}
-                {/* 배열의 마지막 단어에는 , 를 붙이지 않는다 */}
               </React.Fragment>
             ))}
           </HStack>
           <Text style={styles.infoTxt}>바디감</Text>
           <HStack flexWrap={"wrap"} justifyContent={"center"} mb={4}>
             {body.map((item, i) => (
-              // React.Fragment: 리액트에서 여러 개의 컴포넌트를 하나의 노드로 그룹화하는 데 사용되는 빈 컨테이너 역할
               <React.Fragment key={i}>
                 <Text>{item}</Text>
                 {i !== body.length - 1 && <Text>,</Text>}
-                {/* 배열의 마지막 단어에는 , 를 붙이지 않는다 */}
               </React.Fragment>
             ))}
           </HStack>
         </VStack>
+      </Box>
+      <Text
+        fontFamily={"Gamja-Flower"}
+        mt={6}
+        mb={2}
+        ml={4}
+        fontSize={20}
+        borderBottomWidth={2}
+        borderBottomColor={"#FFB000"}
+        w={"180px"}
+      >
+        함께하면 좋은 추천 요리
+      </Text>
+      <FoodListComponent item={food} />
+      <Box
+        w={"360px"}
+        borderWidth={1}
+        borderRadius={16}
+        marginX={"auto"}
+        my={6}
+      >
+        <HStack flexWrap={"wrap"} justifyContent={"space-evenly"} py={2} px={4}>
+          {food.map((item, i) => (
+            <React.Fragment key={i}>
+              <Text py={2}>{item}</Text>
+            </React.Fragment>
+          ))}
+        </HStack>
+      </Box>
+      <Box w={"360px"} h={"100px"} margin={"auto"}>
+        <ImageBlurLoading
+          withIndicator
+          thumbnailSource={beers}
+          source={beers}
+          style={{
+            width: "100%",
+            height: "100%",
+            resizeMode: "contain",
+          }}
+        />
       </Box>
     </ScrollView>
   );
@@ -152,7 +191,7 @@ export default function DetailPage({ navigation, route }) {
 const styles = StyleSheet.create({
   infoTxt: {
     backgroundColor: "black",
-    width: 60,
+    width: 120,
     color: "#fff",
     borderRadius: 20,
     textAlign: "center",

@@ -22,9 +22,9 @@ const StackNavigator = () => {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="TabNavigator" component={TabNavigator} />
-      <Stack.Screen name="SignupPage" component={SignupPage} />
       <Stack.Screen name="SigninPage" component={SigninPage} />
+      <Stack.Screen name="SignupPage" component={SignupPage} />
+      <Stack.Screen name="TabNavigator" component={TabNavigator} />
       <Stack.Screen name="DetailPage" component={DetailPage} />
       <Stack.Screen name="ThemePage" component={ThemePage} />
       <Stack.Screen name="ThemeBeerList" component={ThemeBeerList} />
