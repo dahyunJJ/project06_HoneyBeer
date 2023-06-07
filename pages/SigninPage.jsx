@@ -21,18 +21,12 @@ export default function SigninPage({ navigation }) {
 
   // beforeRemove : 뒤로가기 방지 기능
   useEffect(() => {
-    navigation.addListener("beforeRemove", (e) => {
-      e.preventDefault();
-      Alert.alert("경고", "로그인페이지에서는 뒤로 갈 수 없습니다");
-    });
-
     // 로딩화면 보여줄 때 session 값 확인해서 메인페이지로 이동
     setTimeout(() => {
       AsyncStorage.getItem("session", (err, result) => {
         console.log("로그인페이지 session ------", result);
         if (result) {
           // 가입정보가 있다면 바로 메인페이지로 이동
-          console.log("있다", result);
           navigation.navigate("TabNavigator");
         } else {
           // 가입정보가 없다면 로그인 페이지를 보여줌
@@ -66,8 +60,12 @@ export default function SigninPage({ navigation }) {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log("로그인 성공", user.email);
-        navigation.push("TabNavigator");
+
+        // AsyncStorage에 로그인 성공한 이메일을 저장
+        AsyncStorage.setItem("session", email);
+
         // 로그인 성공하면 MainPage로 이동한다
+        navigation.push("TabNavigator");
       })
       .catch((error) => {
         const errorCode = error.code;

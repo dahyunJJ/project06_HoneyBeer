@@ -1,5 +1,11 @@
 import { HStack, Text, Input, Icon, VStack, Box, View } from "native-base";
-import { StyleSheet, TouchableOpacity, ScrollView, Image } from "react-native";
+import {
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+  Image,
+  Alert,
+} from "react-native";
 import { useState, useEffect } from "react";
 
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
@@ -10,10 +16,18 @@ import HotListComponent from "../components/HotListComponent";
 import data from "../data/mackjooData.json";
 import beerIcon from "../assets/image/beerIcon.png";
 
+import { db } from "../config/firebase";
+import { auth } from "../config/firebase";
+
 export default function MainPage({ navigation, route }) {
   const [list, setList] = useState([]);
 
   useEffect(() => {
+    navigation.addListener("beforeRemove", (e) => {
+      e.preventDefault();
+      Alert.alert("경고", "로그인페이지로 갈 수 없습니다");
+    });
+
     setList(data);
   }, []);
 

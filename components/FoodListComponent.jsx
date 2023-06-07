@@ -16,7 +16,7 @@ export default function FoodListComponent({ navigation, item }) {
     }
     return null;
   };
-  console.log(imageUrl("해산물"));
+  // console.log(imageUrl("해산물"));
 
   return (
     <Box>

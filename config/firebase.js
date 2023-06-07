@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"; // 인증 추가
 import { getFirestore } from "firebase/firestore"; // firestore
+import { getStorage } from "firebase/storage"; // storage
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,3 +18,4 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app); // 인증 추가
 export const db = getFirestore(app); //데이터베이스 연결
+export const storage = getStorage(app);

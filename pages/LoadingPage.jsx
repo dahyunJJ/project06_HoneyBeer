@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import ImageBlurLoading from "react-native-image-blur-loading";
 
-const LoadingImg = require("../assets/image/LoadingImg.jpg");
+const LoadingImg = require("../assets/splash.png");
 
 export default function LoadingPage() {
   return (

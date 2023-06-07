@@ -5,6 +5,8 @@ import { Center, HStack, Text, VStack, Flex, Box } from "native-base";
 import ImageBlurLoading from "react-native-image-blur-loading";
 import my from "../assets/image/beeB.png";
 
+import ImageComponent from "../components/ImageComponent";
+
 // firebase 로그아웃 기능
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
@@ -12,12 +14,18 @@ import { signOut } from "firebase/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { db } from "../config/firebase";
-import { collection, query, where, getDocs } from "firebase/firestore";
+import {
+  collection,
+  query,
+  where,
+  getDocs,
+  onSnapshot,
+} from "firebase/firestore";
 
 export default function MyPage({ navigation }) {
+  const [data, setData] = useState([]); // 데이터 저장 변수
   const [nickName, setNickName] = useState(""); // 닉네임 저장 변수
   const [email, setEmail] = useState(""); // 이메일 저장 변수
-  const [comments, setComments] = useState([]); // 댓글 저장 변수
   const [uid, setUid] = useState(""); // uid 저장 변수
 
   useEffect(() => {
@@ -45,33 +53,21 @@ export default function MyPage({ navigation }) {
       const userData = await getUser(email);
       setNickName(userData[0].nickName);
       setUid(userData[0].uid);
-      // getData(userData[0].uid);
+      getData(userData[0].uid);
+
+      // 실시간  dairy 데이터 가져오기
+      const dataList = onSnapshot(
+        query(collection(db, "diary"), where("uid", "==", userData[0].uid)),
+        (snapshot) => {
+          const updateData = snapshot.docs.map((doc) => doc.data());
+          setData(updateData);
+        }
+      );
+
+      return dataList();
     };
     fetchData();
   }, []);
-
-  AsyncStorage.getItem("session", (err, result) => {
-    console.log("메인페이지입니다 session ------", result);
-  });
-
-  // email 정보를 가지고 있는 세션 가져오기
-  const getSession = async () => {
-    try {
-      const value = await AsyncStorage.getItem("session");
-
-      if (value) return value;
-    } catch (err) {
-      console.log("세션 가져오기 실패", err);
-    }
-  };
-
-  // 유저 데이터(nickName 정보) 가져오기
-  const getUser = async (email) => {
-    const q = query(collection(db, "users"), where("email", "==", email));
-    const querySnapshot = await getDocs(q);
-    return querySnapshot.docs.map((doc) => doc.data());
-    // 값이 하나밖에 없는 배열 구조로 담김
-  };
 
   // 로그아웃 기능 함수
   const logoutFunc = () => {
@@ -90,6 +86,33 @@ export default function MyPage({ navigation }) {
       });
   };
 
+  // email 정보를 가지고 있는 세션 가져오기
+  const getSession = async () => {
+    try {
+      const value = await AsyncStorage.getItem("session");
+      console.log("마이페이지 session ------", value);
+      if (value) return value;
+    } catch (err) {
+      console.log("세션 가져오기 실패", err);
+    }
+  };
+
+  // 유저 데이터(nickName 정보) 가져오기
+  const getUser = async (email) => {
+    const q = query(collection(db, "users"), where("email", "==", email));
+    const querySnapshot = await getDocs(q);
+    return querySnapshot.docs.map((doc) => doc.data());
+    // 값이 하나밖에 없는 배열 구조로 담김
+  };
+
+  // diary 데이터 가져오기
+  const getData = async (uid) => {
+    const q = query(collection(db, "diary"), where("uid", "==", uid));
+    const querySnapshot = await getDocs(q);
+    const diaryData = querySnapshot.docs.map((doc) => doc.data());
+    setData(diaryData);
+  };
+
   return (
     <ScrollView>
       <Center
@@ -101,8 +124,8 @@ export default function MyPage({ navigation }) {
         <Box borderWidth={1} p={4} borderRadius={50} borderColor={"#FFB000"}>
           <ImageBlurLoading source={my} style={styles.thumbnail} />
         </Box>
-        <Text mt={4}>닉네임 :</Text>
-        <Text>이메일 :</Text>
+        <Text mt={4}>닉네임 : {nickName}</Text>
+        <Text>이메일 : {email}</Text>
         <TouchableOpacity
           style={styles.logout}
           onPress={() => {
@@ -118,11 +141,11 @@ export default function MyPage({ navigation }) {
         <VStack w={"30%"} alignItems={"center"}>
           <Text>작성한 글</Text>
           <Text fontWeight={700} color={"orange.500"} fontSize={20}>
-            12
+            {data.length}
           </Text>
         </VStack>
         <VStack w={"30%"} alignItems={"center"}>
-          <Text>작성한 댓글</Text>
+          <Text>좋아요 수</Text>
           <Text fontWeight={700} color={"orange.500"} fontSize={20}>
             12
           </Text>
@@ -133,6 +156,11 @@ export default function MyPage({ navigation }) {
             30
           </Text>
         </VStack>
+      </Flex>
+      <Flex mt={6} flexDirection={"row"} flexWrap={"wrap"} borderColor={"red"}>
+        {data.reverse().map((content, i) => (
+          <ImageComponent image={content.image} key={i} />
+        ))}
       </Flex>
     </ScrollView>
   );
